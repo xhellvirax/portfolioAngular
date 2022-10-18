@@ -1,9 +1,6 @@
 <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
-      <li *ngif = "userIsAuthenticated">
-        <button 
-         type="button" class="btn btn-light">Cerrar Sesion</button>
-      </li>
+        <button type="button" class="btn btn-light">Cerrar Sesion</button>
     </div>
   </div>
   <nav class="navbar navbar-dark bg-dark">
@@ -24,12 +21,11 @@
             <img [src]="miPorfolio.img_perfil" class="foto_perfil "/>
             </div>
             <h4 class="text-danger">Sobre mi</h4>
-            <div class="btn-edit" onclick="editar_sobremi()"><i class="fas fa-pen"></i></div>
-            <p class="text-muted">{{miPorfolio.sobre_mi}}</p>
-            <input id="edit_sobremi" type="text" oninput="escribir_sobremi(this.value)" style="display: none;">
-            <div class="d-none d-md-block">
-            <i class="fas fa-pen" id="pen-img"></i>
+            <div class="btn-edit">
+              <button type="button" class="btn btn-primary">Editar</button>
+              <button type="button" class="btn btn-danger">Eliminar</button>
             </div>
+            <p class="text-muted">{{miPorfolio.sobre_mi}}</p>
         </div>
     </div>
 </section>

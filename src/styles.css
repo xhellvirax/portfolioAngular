@@ -37,8 +37,11 @@ li {
 
 /* Barra de Progreso */
 .progress {
-    margin: 15px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin:auto;
+    margin-top: 13px;
 }
 
 /* Estilos sección Mis proyectos */
@@ -70,12 +73,7 @@ li {
     cursor:pointer;
 }
 
-/* Estilos Pens edit */
-
-.fa-pen {
-    float: right;
-}
-
-#pen-img {
-    float: left;
+/* estilos botones */
+button.btn.btn-primary {
+    margin: 7px;
 }

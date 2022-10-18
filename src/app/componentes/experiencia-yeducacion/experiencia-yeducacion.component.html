@@ -8,9 +8,12 @@
               <div class="d-flex align-items-center">
                 <img [src]="educacion.logo" alt="" style="width: 90px; height: 90px" class="rounded-circle"/>
                 <div class="ms-3">
-                  <i class="fas fa-pen"></i>
                   <p class="fw-bold mb-1">{{educacion.curso}}</p>
                   <p class="text-muted mb-0">{{educacion.tiempo}}</p>
+                  <div class="btn-edit">
+                    <button type="button" class="btn btn-primary">Editar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                  </div>
                 </div>
               </div>
             </div>
