@@ -1,0 +1,18 @@
+<!-- Sección Sobre mis Proyectos -->
+<h1 class="text-dark" id="title">Mis Proyectos</h1>
+<li *ngFor="let misproyectos of misproyectos">
+   <div class="row" id="row">
+       <div class="col-xl-4 col-lg-6 mb-4">
+         <div class="card">
+           <div class="card-body">
+             <div class="d-flex align-items-center">
+               <img [src]="misproyectos.logo" alt="" style="width: 90px; height: 90px" class="rounded-circle"/>
+               <div class="ms-3">
+                <i class="fas fa-pen"></i>
+                 <p class="fw-bold mb-1">{{misproyectos.nombre}}</p>
+                 <p class="text-muted mb-0">{{misproyectos.Fechacreacion}}</p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>

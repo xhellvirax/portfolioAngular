@@ -1,0 +1,81 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Tipografia */
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Se elimina los estilos de las listas */
+li {
+    list-style: none;
+}
+
+/* Logo ArgPrograma */
+.logo {
+    width: 10%;
+    display: flex;
+}
+/* Estilos sección encabezado */
+.foto_perfil {
+    width: 25%;
+    position: absolute;
+    top: 41%;
+    left: 1%;
+    float: left;
+    display: flex;
+    z-index: 10;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: revert;
+    letter-spacing: 4px;
+}
+
+/* Barra de Progreso */
+.progress {
+    margin: 15px;
+    margin-top: 10px;
+}
+
+/* Estilos sección Mis proyectos */
+
+#row {
+    justify-content: center;
+    margin: auto;
+}
+
+
+#title-2 {
+    display: flex;
+    justify-content:center ;
+    align-items: flex-start;
+    letter-spacing: 4px;
+    margin: revert;
+    padding: 16px;
+}
+/* Estilos Login */
+.gradient-custom {
+    background: #6a11cb;
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+}
+
+/* Estilo boton-ir-arriba */
+.irArriba {
+    width: 50px;
+    float: right;
+    cursor:pointer;
+}
+
+/* Estilos Pens edit */
+
+.fa-pen {
+    float: right;
+}
+
+#pen-img {
+    float: left;
+}

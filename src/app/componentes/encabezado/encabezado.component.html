@@ -1,0 +1,35 @@
+<div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <li *ngif = "userIsAuthenticated">
+        <button 
+         type="button" class="btn btn-light">Cerrar Sesion</button>
+      </li>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1662441043/APLogo-20-20.png" alt="logo" class="logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+ <!--Sección del Perfil -->
+ <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-dark">{{miPorfolio.name}}</h1>
+            <p class="lead text-muted">{{miPorfolio.ocupacion}}</p>
+            <div class="d-none d-md-block">
+            <img [src]="miPorfolio.img_perfil" class="foto_perfil "/>
+            </div>
+            <h4 class="text-danger">Sobre mi</h4>
+            <div class="btn-edit" onclick="editar_sobremi()"><i class="fas fa-pen"></i></div>
+            <p class="text-muted">{{miPorfolio.sobre_mi}}</p>
+            <input id="edit_sobremi" type="text" oninput="escribir_sobremi(this.value)" style="display: none;">
+            <div class="d-none d-md-block">
+            <i class="fas fa-pen" id="pen-img"></i>
+            </div>
+        </div>
+    </div>
+</section>
