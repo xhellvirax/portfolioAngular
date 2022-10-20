@@ -12,6 +12,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { PofolioComponent } from './componentes/pofolio/pofolio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NewExperienciaComponent } from './componentes/experiencia-yeducacion/new-experiencia.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     IniciarSesionComponent,
     PofolioComponent,
+    NewExperienciaComponent,
   ],
   imports: [
     BrowserModule,
