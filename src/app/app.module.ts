@@ -13,6 +13,7 @@ import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-ses
 import { PofolioComponent } from './componentes/pofolio/pofolio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NewExperienciaComponent } from './componentes/experiencia-yeducacion/new-experiencia.component';
+import { EditExperienciaYEducacionComponent } from './componentes/experiencia-yeducacion/edit-experiencia-y-educacion.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { NewExperienciaComponent } from './componentes/experiencia-yeducacion/ne
     IniciarSesionComponent,
     PofolioComponent,
     NewExperienciaComponent,
+    EditExperienciaYEducacionComponent,
   ],
   imports: [
     BrowserModule,
