@@ -21,11 +21,9 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       </ul>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn btn-dark px-3 me-2">
-          Iniciar Sesion
-        </button>
-        <a class="btn btn-dark px-3" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i class="fab fa-github"></i></a>
-        <a class="btn btn-dark px-3" style = "margin: 5px;" href="https://linkedin.con/mdbootstrap/mdb-ui-kit" role="button"><i class="fab fa-linkedin"></i></a>
+        <button type="button" class="btn btn-outline-dark" id="btn-iniciar-sesion"> Iniciar Sesion </button>
+        <a class="btn  btn-outline-dark" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"><i class="fab fa-github"></i></a>
+        <a class="btn  btn-outline-dark"  href="https://linkedin.con/mdbootstrap/mdb-ui-kit" role="button"><i class="fab fa-linkedin"></i></a>
 
       </div>
     </div>
@@ -41,11 +39,11 @@
             <img [src]="miPorfolio.img_perfil" class="foto_perfil "/>
             </div>
             <h4 class="text-danger">Sobre mi</h4>
-            <div class="btn-edit">
-              <button type="button" class="btn btn-primary">Editar</button>
-              <button type="button" class="btn btn-danger">Eliminar</button>
-            </div>
             <p class="text-muted">{{miPorfolio.sobre_mi}}</p>
+            <div class="btn-edit">
+              <button type="button" class="btn btn-primary btn">Editar</button>
+              <button type="button" class="btn btn-danger btn">Eliminar</button>
+            </div>
         </div>
     </div>
 </section>

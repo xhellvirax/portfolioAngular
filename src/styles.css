@@ -1,8 +1,10 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
-/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+/* Tipografia general */
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* estilos barra de navegacion */
@@ -33,13 +35,28 @@ li {
     display: flex;
     z-index: 10;
 }
-/* titulos */
+/* titulos Nombre, Experiencia laboral y Educación, Grado de dominios, Mis proyectos*/
 #title {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10%;
+    font-family: 'Montserrat', sans-serif;
 }
+
+#title-2 {
+    display: flex;
+    justify-content:center ;
+    align-items: flex-start;
+    letter-spacing: 4px;
+    padding: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
 
 /* Barra de Progreso */
 .progress {
@@ -58,39 +75,77 @@ li {
 }
 
 
-#title-2 {
-    display: flex;
-    justify-content:center ;
-    align-items: flex-start;
-    letter-spacing: 4px;
-    margin: revert;
-    padding: 16px;
-}
+
 /* Estilos Login */
 .gradient-custom {
     background: #6a11cb;
     background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
 }
 
-/* Estilo boton-ir-arriba */
-.irArriba {
-    width: 50px;
-    float: right;
-    cursor:pointer;
-}
 
 /* estilos botones */
 button.btn.btn-primary {
     margin: 5px;
+    font-family: 'Encode Sans', sans-serif;
+    float: right;
+}
+
+button.btn.btn-primary.btn {
+    margin: 5px;
+    font-family: 'Encode Sans', sans-serif;
+    float: right;
 }
 
 button.btn.btn-dark {
     float: right;
-    margin: 40px;
+    display: flex;
+    margin: 14px;
+    color: black;
+    font-family: 'Encode Sans', sans-serif;
 }
 
-button#boton {
+button.btn.btn-dark:hover {
     color: white;
+}
+
+button.btn.btn-danger {
+    font-family: 'Encode Sans', sans-serif;
+    float: right;
+    margin: 6px;
+}
+
+
+.btn.btn.btn-outline-dark {
+    margin: 7px;
+
+}
+
+
+
+/* Estilos textos */
+.pink-text {
+    color:whitesmoke;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.text-danger {
+    font-family: 'Encode Sans', sans-serif;
+    display: flow-root;
+}
+
+.lead.text-muted {
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.text-muted {
+    font-family: 'Encode Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.fw-dark {
+    display: flex;
+    justify-content: center;
 }
 
 /* estilos seccion mis proyectos */
@@ -100,10 +155,19 @@ button#boton {
     width: 30%;
     margin: 20px;
     background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
+
 }
 
-.pink-text {
-    color:whitesmoke;
+/* Estilos tabla experiencia y educacion */
+
+.container.container-1 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 0px wheat;
+    width: 98%;
+    border-radius: 20px;
 }
+
+
+
 
