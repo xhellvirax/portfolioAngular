@@ -1,6 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2? familia= Roboto:peso@300;500 & display=swap');
 
 /* Tipografia general */
 * {
@@ -53,11 +54,6 @@ li {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
-
-
-
 /* Barra de Progreso */
 .progress {
     display: flex;
@@ -74,14 +70,11 @@ li {
     margin: auto;
 }
 
-
-
 /* Estilos Login */
 .gradient-custom {
     background: #6a11cb;
     background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
 }
-
 
 /* estilos botones */
 button.btn.btn-primary {
@@ -100,7 +93,6 @@ button.btn.btn-dark {
     float: right;
     display: flex;
     margin: 14px;
-    color: black;
     font-family: 'Encode Sans', sans-serif;
 }
 
@@ -114,13 +106,19 @@ button.btn.btn-danger {
     margin: 6px;
 }
 
-
-.btn.btn.btn-outline-dark {
+.btn.btn-outline-warning {
     margin: 7px;
-
+    --bs-btn-hover-bg : #AB2CFE;
+    --bs-btn-hover-color : #ffff;
+    --bs-btn-hover-border-color: #AB2CFE;
+    --bs-btn-color: #AB2CFE;
+    --bs-btn-border-color: #AB2CFE;
 }
 
-
+button#btn-iniciar-sesion.btn.btn {
+    --bs-btn-hove-bg: #ffff;
+    
+}
 
 /* Estilos textos */
 .pink-text {
@@ -129,7 +127,7 @@ button.btn.btn-danger {
 }
 
 .text-danger {
-    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flow-root;
 }
 
@@ -152,7 +150,7 @@ button.btn.btn-danger {
 
 .card.card-image {
     display: inline-block;
-    width: 30%;
+    width: 46%;
     margin: 20px;
     background-repeat: no-repeat;
 
@@ -168,6 +166,104 @@ button.btn.btn-danger {
     border-radius: 20px;
 }
 
+/* Sección educación y experiencia laboral */ 
+.section-title {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+  
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+}
+  
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0563bb;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  
+.section-title p {
+    margin-bottom: 0;
+}
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #45505b;
+}
+  
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0563bb;
+    position: relative;
+}
+  
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #0563bb;
+    margin-bottom: 10px;
+}
+  
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: #f7f8f9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+  
+.resume .resume-item  {
+    padding-left: 20px;
+}
+  
+.resume .resume-item  {
+    padding-bottom: 10px;
+}
+  
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+  
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #0563bb;
+}
 
-
-
+/* Seccion mis proyectos y certificados */

@@ -19,12 +19,12 @@
             </div>
           </div>
         </div> -->
-  <div class="container container-1">
+ <!-- <div class="container container-1">
     <div class="row">
       <h1 id="title"> Experiencia Laboral y Educacion</h1>
   </div>
     <div class="col-lg-11">
-      <table class="table" style="width: 104%; margin:35px">
+      <table class="table" style=" margin:35px">
         <thead>
           <tr>
             <th>NOMBRE</th>
@@ -42,4 +42,80 @@
         </tbody>
       </table>
   </div>
-  </div>
+  </div> -->
+
+
+  <section id="resume" class="resume">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Experiencia y Educación</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="resume-item pb-0">
+            <h3 class="resume-title">EDUCACIÓN</h3>
+          </div>
+          <div class="resume-item">
+            <h4>Master of Fine Arts &amp; Graphic Design</h4>
+            <h5>2020 - Actualidad</h5>
+            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+            <table class="table">
+              <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                  <td>{{Experiencia.nombreA}}</td>
+                  <td>{{Experiencia.descripcionA}}</td>
+                  <td><button type="button" class="btn btn-primary" routerLink="/editexp/{{Experiencia.id}}"> <i class="bi bi-pencil-fill"></i> EDITAR </button></td>
+                  <td><button type="button" class="btn btn-danger" (click)="delete(Experiencia.id)"> <i class="bi bi-pencil-fill"></i> BORRAR  </button></td>
+              </tbody>
+            </table>
+          </div>
+          <div class="resume-item">
+            <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
+            <h5>2010 - 2014</h5>
+            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+            <table class="table">
+              <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                  <td>{{Experiencia.nombreA}}</td>
+                  <td>{{Experiencia.descripcionA}}</td>
+                  <td><button type="button" class="btn btn-primary" routerLink="/editexp/{{Experiencia.id}}"> <i class="bi bi-pencil-fill"></i> EDITAR </button></td>
+                  <td><button type="button" class="btn btn-danger" (click)="delete(Experiencia.id)"> <i class="bi bi-pencil-fill"></i> BORRAR  </button></td>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <button type="button" id="boton" class="btn btn-dark"   routerLink="/nuevaexp"><i class="bi bi-pencil-fill"></i>Nueva Experiencia</button>
+          <h3 class="resume-title">EXPERIENCIA PROFESIONAL</h3>
+          <div class="resume-item">
+            <h4>Senior graphic design specialist</h4>
+            <h5>2019 - Present</h5>
+            <p><em>Experion, New York, NY </em></p>
+            <table class="table">
+              <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                  <td>{{Experiencia.nombreA}}</td>
+                  <td>{{Experiencia.descripcionA}}</td>
+                  <td><button type="button" class="btn btn-primary" routerLink="/editexp/{{Experiencia.id}}"> <i class="bi bi-pencil-fill"></i> EDITAR </button></td>
+                  <td><button type="button" class="btn btn-danger" (click)="delete(Experiencia.id)"> <i class="bi bi-pencil-fill"></i> BORRAR  </button></td>
+              </tbody>
+            </table>
+          </div>
+          <div class="resume-item">
+            <h4>Graphic design specialist</h4>
+            <h5>2017 - 2018</h5>
+            <p><em>Stepping Stone Advertising, New York, NY</em></p>
+            <table class="table">
+              <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                  <td>{{Experiencia.nombreA}}</td>
+                  <td>{{Experiencia.descripcionA}}</td>
+                  <td><button type="button" class="btn btn-primary" routerLink="/editexp/{{Experiencia.id}}"> <i class="bi bi-pencil-fill"></i> EDITAR </button></td>
+                  <td><button type="button" class="btn btn-danger" (click)="delete(Experiencia.id)"> <i class="bi bi-pencil-fill"></i> BORRAR  </button></td>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
