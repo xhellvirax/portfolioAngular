@@ -27,7 +27,7 @@ import { EditExperienciaYEducacionComponent } from './componentes/experiencia-ye
     IniciarSesionComponent,
     PofolioComponent,
     NewExperienciaComponent,
-    EditExperienciaYEducacionComponent
+    EditExperienciaYEducacionComponent,
   ],
   imports: [
     BrowserModule,

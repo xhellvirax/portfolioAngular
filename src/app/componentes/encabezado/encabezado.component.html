@@ -1,49 +1,40 @@
- <!--<div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-        <button type="button" class="btn btn-light">Cerrar Sesion</button>
-    </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-        <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1662441043/APLogo-20-20.png" alt="logo" class="logo">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav> -->
-
-  <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand me-2" href="https://mdbgo.com/">
-      <img src="https://www.concordia.gob.ar/sites/all/themes/programar/images/arg-programa.png"  height="50" alt="Logo" loading="lazy" style="margin-top: -1px;">
-    </a>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      </ul>
-      <div class="d-flex align-items-center">
-        <button type="button" class="btn btn-outline-dark" id="btn-iniciar-sesion"> Iniciar Sesion </button>
-        <a class="btn  btn-outline-warning" href=" https://github.com/antonellaperlinghieri" role="button"><i class="fab fa-github"></i></a>
-        <a class="btn  btn-outline-primary"  href="https://linkedin.con/mdbootstrap/mdb-ui-kit" role="button"><i class="fab fa-linkedin"></i></a>
-
-      </div>
-    </div>
-</nav>
 <!-- Navbar -->
- <!--Sección del Perfil -->
- <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-dark">{{miPorfolio.name}}</h1>
-            <p class="lead text-muted">{{miPorfolio.ocupacion}}</p>
-            <div class="d-none d-md-block">
-            <img [src]="miPorfolio.img_perfil" class="foto_perfil "/>
-            </div>
-            <h4 class="text-danger">Sobre mi</h4>
-            <p class="text-muted">{{miPorfolio.sobre_mi}}</p>
-            <div class="btn-edit">
+<header class="sticky">
+<nav class="navbar navbar-expand-lg navbar-white bg-white">
+  <div class="container">
+          <img src="https://www.concordia.gob.ar/sites/all/themes/programar/images/arg-programa.png" class="logo" height="50" alt="Logo" loading="lazy" style="margin-top: -1px;" />
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+      <div class="d-flex align-items-center">
+        <ul class="nav-list">
+            <li><a href="#" id="selected"></a></li>
+            <li><a href="#experiencia-y-educacion">EXPERIENCIA Y EDUCACIÓN</a></li>
+            <li><a href="#hard-y-softskills">MIS DOMINIOS</a></li>
+            <li><a href="#misproyectos">MIS PROYECTOS</a></li>
+          </ul>
+          <a class="btn btn-outline-warning" href=" https://github.com/antonellaperlinghieri" role="button"><i class="fab fa-github"></i></a>
+          <a class="btn btn-outline-primary" href="https://linkedin.con/mdbootstrap/mdb-ui-kit" role="button"><i class="fab fa-linkedin"></i></a>
+          <button type="button" class="btn btn-outline-dark" id="btn-iniciar-sesion"> <a href="/iniciar-sesion" >Iniciar Sesion</a></button>
+      </div>
+  </div>
+</nav>
+</header>
+<!-- Navbar -->
+<!--Sección del Perfil -->
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-dark">{{miPorfolio.name}}</h1>
+          <p class="lead text-muted">{{miPorfolio.ocupacion}}</p>
+          <div class="d-none d-md-block">
+              <img [src]="miPorfolio.img_perfil" class="foto_perfil" />
+          </div>
+          <h4 class="text-danger">Sobre mi</h4>
+          <p class="text-muted">{{miPorfolio.sobre_mi}}</p>
+          <div class="btn-edit">
               <button type="button" class="btn btn-primary btn">Editar</button>
               <button type="button" class="btn btn-danger btn">Eliminar</button>
-            </div>
-        </div>
-    </div>
+          </div>
+      </div>
+  </div>
 </section>
+
