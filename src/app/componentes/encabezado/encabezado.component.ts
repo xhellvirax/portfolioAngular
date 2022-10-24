@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router} from '@angular/router';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { TokenService } from 'src/app/servicios/token.service';
 @Component({
   selector: 'app-encabezado',
   templateUrl: './encabezado.component.html',
@@ -9,7 +10,7 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
 export class EncabezadoComponent implements OnInit {
   miPorfolio:any;
 
-  constructor(private datosPorfolio:PorfolioService, public router:Router) { }
+  constructor(private datosPorfolio:PorfolioService, public router:Router, private tokenService:TokenService) { }
 
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data => {
@@ -18,4 +19,8 @@ export class EncabezadoComponent implements OnInit {
     });
   }
 
+  onLogout():void {
+    this.tokenService.logout();
+    window.location.reload();
+  }
 }

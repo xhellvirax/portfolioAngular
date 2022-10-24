@@ -4,6 +4,7 @@ import { Router,ActivatedRoute } from '@angular/router';
 import { AutenticacionService } from 'src/app/servicios/autenticacion.service';
 import { AuthService } from 'src/app/auth.service';
 import { NgForOfContext } from '@angular/common';
+import { TokenService } from 'src/app/servicios/token.service';
 
 
 @Component({
@@ -40,6 +41,7 @@ onEnviar (event:Event) {
     this.ruta.navigate(['/pofolio']);
   })
 }
+
 
   
 }
