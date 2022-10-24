@@ -13,8 +13,11 @@ import { TokenService } from 'src/app/servicios/token.service';
   styleUrls: ['./iniciar-sesion.component.css']
 })
 export class IniciarSesionComponent implements OnInit {
+  isLogged=false;
+  isLogginFail = false; 
+  roles : string [] = [];
   form : FormGroup;
-  constructor(private formBuilder:FormBuilder, private autenticacionService : AutenticacionService, private ruta:Router) { 
+  constructor(private formBuilder:FormBuilder, private autenticacionService : AutenticacionService, private ruta:Router, private tokenService:TokenService) { 
     this.form = formBuilder.group ({
       nombreUsuario : ['',[Validators.required, Validators.email]],
       password : ['', [Validators.required]]
@@ -24,6 +27,11 @@ export class IniciarSesionComponent implements OnInit {
 
 
 ngOnInit(): void {
+  if(this.tokenService.getToken()) {
+    this.isLogged = true;
+    this.isLogginFail = false;
+    this.roles = this.tokenService.getAuthorities();
+  }
 }
 
 get Email () {

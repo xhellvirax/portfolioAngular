@@ -1,0 +1,26 @@
+<!--Sección para editar la persona-->
+<div class="container" *ngIf="persona">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()">
+                <div class="form-group">
+                    <label for="nombre">Nombre </label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required />
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" name="apellido" id="apellido" [(ngModel)]="persona.apellido" required />
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" class="form-control" name="descripcion" id="descripcion" [(ngModel)]="persona.descripcion" required />
+                </div>
+                <div class="form-group">
+                    <label for="img">Imagen</label>
+                    <input type="file" class="form-control" name="img" id="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png" />
+                </div>
+                <button type="submit" class="btn btn-primary">Actualizar</button>
+            </form>
+        </div>
+    </div>
+  </div>

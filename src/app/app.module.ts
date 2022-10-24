@@ -14,6 +14,11 @@ import { PofolioComponent } from './componentes/pofolio/pofolio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NewExperienciaComponent } from './componentes/experiencia-yeducacion/new-experiencia.component';
 import { EditExperienciaYEducacionComponent } from './componentes/experiencia-yeducacion/edit-experiencia-y-educacion.component';
+import { EditAcercadeComponent } from './componentes/encabezado/edit-acercade.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+
 
 
 @NgModule({
@@ -28,13 +33,16 @@ import { EditExperienciaYEducacionComponent } from './componentes/experiencia-ye
     PofolioComponent,
     NewExperienciaComponent,
     EditExperienciaYEducacionComponent,
+    EditAcercadeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [PorfolioService],
   bootstrap: [AppComponent]
