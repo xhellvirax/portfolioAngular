@@ -18,17 +18,16 @@ export class EncabezadoComponent implements OnInit {
   constructor(private datosPorfolio:PorfolioService, public router:Router, private tokenService:TokenService, public personaservice:PersonaService, public imageService:ImageService) { }
 
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data => {
-      console.log(data);
-      this.miPorfolio = data;
-    });
     this.cargarPersona();
     if(this.tokenService.getToken()) {
       this.isLogged = true;
     } else {
       this.isLogged = false;
     };
-    this.cargarPersona();
+    this.datosPorfolio.obtenerDatos().subscribe(data => {
+      console.log(data);
+      this.miPorfolio = data;
+    })
   }
   onLogout():void {
     this.tokenService.logout();
