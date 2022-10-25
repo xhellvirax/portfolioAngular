@@ -33,7 +33,7 @@
           <h1 class="fw-dark">{{persona.nombre}} {{persona.apellido}}</h1>
           <p class="lead text-muted">{{miPorfolio.ocupacion}}</p>
           <div class="d-none d-md-block">
-              <img [src]="miPorfolio.img_perfil" class="foto_perfil" />
+              <img src={{persona.img}} class="foto_perfil" />
           </div>
           <h4 class="text-danger">Sobre mi</h4>
           <p class="text-muted">{{persona.descripcion}}</p>
