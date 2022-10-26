@@ -5,7 +5,6 @@ import { AutenticacionService } from 'src/app/servicios/autenticacion.service';
 import { AuthService } from 'src/app/auth.service';
 import { NgForOfContext } from '@angular/common';
 import { TokenService } from 'src/app/servicios/token.service';
-import { LoginUsuario } from 'src/model/login-usuario';
 
 
 @Component({
@@ -46,8 +45,6 @@ get Password () {
 onEnviar (event:Event) {
   event.preventDefault;
   this.autenticacionService.IniciarSesion(this.form.value).subscribe(data=> {
-    this.isLogged=true;
-    this.isLogginFail= false;
     console.log("DATA : " + JSON.stringify(data));
     this.ruta.navigate(['/pofolio']);
   })
