@@ -1,7 +1,7 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2? familia= Roboto:peso@300;500 & display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Tipografia general */
 * {
@@ -135,13 +135,13 @@ li {
 /* estilos botones */
 button.btn.btn-primary {
     margin: 5px;
-    font-family: "Encode Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     float: right;
 }
 
 button.btn.btn-primary.btn {
     margin: 5px;
-    font-family: "Encode Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     float: right;
 }
 
@@ -149,7 +149,7 @@ button.btn.btn-dark {
     margin-top: 40px;
     margin-bottom: 40px;
     text-decoration: none;
-    font-family: "Encode Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 button.btn.btn-dark:hover {
@@ -157,7 +157,7 @@ button.btn.btn-dark:hover {
 }
 
 button.btn.btn-danger {
-    font-family: "Encode Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     float: right;
     margin: 6px;
 }
@@ -205,20 +205,20 @@ a.btn.btn-info.mb-3 {
 /* Estilos textos */
 .pink-text {
     color: whitesmoke;
-    font-family: "Encode Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .text-danger {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flow-root;
 }
 
 .lead.text-muted {
-    font-family: "Encode Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .text-muted {
-    font-family: "Encode Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
 }
@@ -235,13 +235,13 @@ a.btn.btn-info.mb-3 {
 }
 
 .section-title h2 {
-    font-size: 32px;
+    font-size: 38px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 15px;
     padding-bottom: 15px;
     position: relative;
-    color: #45505b;
+    color: black;
 }
 
 .section-title h2::before {
@@ -275,7 +275,7 @@ a.btn.btn-info.mb-3 {
     margin-top: 2rem;
     text-align: center;
     cursor: pointer;
-    font-family: "Encode Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 10px;
 }
 
@@ -320,7 +320,7 @@ a.btn.btn-info.mb-3 {
 }
 
 .layer h3 {
-    font-family: "Encode Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: black;
     margin: revert;
 }
