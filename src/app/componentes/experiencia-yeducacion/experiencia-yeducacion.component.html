@@ -1,31 +1,30 @@
- <!-- Cards sección Experiencia y Educación -->
- <!-- <div class="container container-1">
-    <div class="row">
-      <h1 id="title"> Experiencia Laboral y Educacion</h1>
-  </div>
+<div class="container" id="experiencia-y-educacion">
+  <div class="row">
+    <div class="section-title">
+        <h2>Experiencia y Educación</h2>
+    </div>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaexp">NUEVA EXPERIENCIA O EDUCACIÓN</button>
+    </div>
+    <div class="col-lg-1"></div>
     <div class="col-lg-11">
-      <table class="table" style=" margin:35px">
-        <thead>
-          <tr>
-            <th>NOMBRE</th>
-            <th>DESCRIPCIÓN</th>
-            <th>LOGO</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let Experiencia of expe">
-            <td>{{Experiencia.nombreA}}</td>
-            <td>{{Experiencia.descripcionA}}</td>
-            <td><button type="button" class="btn btn-primary" routerLink="/editexp/{{Experiencia.id}}"> <i class="bi bi-pencil-fill"></i> EDITAR </button></td>
-            <td><button type="button" class="btn btn-danger" (click)="delete(Experiencia.id)"> <i class="bi bi-pencil-fill"></i> BORRAR  </button></td>
-            <button type="button" id="boton" class="btn btn-dark"   routerLink="/nuevaexp"><i class="bi bi-pencil-fill"></i>Nueva Experiencia</button>
-        </tbody>
-      </table>
+        <table class="table">
+            <th scope="col">NOMBRE DE LA EXP O EDUCACIÓN</th>
+            <th scope="col">DESCRIPCIÓN</th>
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td>{{Experiencia.nombreA}}</td>
+                    <td>{{Experiencia.descripcionA}}</td>
+                    <td><button type="button" class="btn btn-primary" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-fill"></i> EDITAR</button></td>
+                    <td><button type="button" class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-pencil-fill"></i> BORRAR</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
   </div>
-  </div> -->
+</div>
 
-
-<section id="#hard-y-softskills" class="resume">
+<!--<section id="#hard-y-softskills" class="resume">
     <div class="container" data-aos="fade-up">
         <div class="section-title">
             <h2>Experiencia y Educación</h2>
@@ -107,8 +106,7 @@
                                 <td>{{Experiencia.descripcionA}}</td>
                                 <td>
                                     <button type="button" class="btn btn-primary" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-fill"></i> EDITAR</button>
-                                </td>
-                                <td>
+
                                     <button type="button" class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-pencil-fill"></i> BORRAR</button>
                                 </td>
                             </tr>
@@ -118,5 +116,5 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 

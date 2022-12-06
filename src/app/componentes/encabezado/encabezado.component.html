@@ -1,47 +1,45 @@
 <!-- Navbar -->
 <header class="sticky">
-<nav class="navbar navbar-expand-lg navbar-white bg-white">
-  <a class="navbar-brand" href="#">
-    <img src="https://www.concordia.gob.ar/sites/all/themes/programar/images/arg-programa.png" class="logo" height="50" alt="Logo" loading="lazy" style="margin-top: -1px;" />
-   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-      <div class="d-flex align-items-center">
-        <ul class="navbar-nav">
-        <ul class="nav-list">
-            <li class="nav-item active"><a href="#" id="selected"></a></li>
-            <li class="nav-item"><a href="#experiencia-y-educacion">EXPERIENCIA Y EDUCACIÓN</a></li>
-            <li class="nav-item"><a href="#hard-y-softskills">MIS DOMINIOS</a></li>
-            <li class="nav-item"><a href="#misproyectos">MIS PROYECTOS</a></li>
-          </ul>
-        </ul>
-          <a class="btn btn-outline-warning" href=" https://github.com/antonellaperlinghieri" role="button"><i class="fab fa-github"></i></a>
-          <a class="btn btn-outline-primary" href="https://linkedin.con/mdbootstrap/mdb-ui-kit" role="button"><i class="fab fa-linkedin"></i></a>
-          <button type="button" class="btn btn-outline-dark" id="btn-iniciar-sesion" (click)="login()" *ngIf="!isLogged">Iniciar Sesion</button>
-          <button type="button" class="btn btn-outline-dark"  (click)="onLogout()" *ngIf="isLogged">Cerrar Sesion</button>
+  <nav class="navbar navbar-expand-lg navbar-white bg-white">
+      <a class="navbar-brand" href="#">
+          <img src="https://www.concordia.gob.ar/sites/all/themes/programar/images/arg-programa.png" class="logo" height="50" alt="Logo" loading="lazy" style="margin-top: -1px;" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="d-flex align-items-center">
+              <ul class="navbar-nav">
+                  <ul class="nav-list">
+                      <li class="nav-item active"><a href="#" id="selected"></a></li>
+                      <li class="nav-item"><a href="#">EXPERIENCIA Y EDUCACIÓN</a></li>
+                      <li class="nav-item"><a href="#">MIS DOMINIOS</a></li>
+                      <li class="nav-item"><a href="#">MIS PROYECTOS</a></li>
+                  </ul>
+              </ul>
+              <a class="btn btn-outline-warning" href=" https://github.com/antonellaperlinghieri" role="button"><i class="fab fa-github"></i></a>
+              <a class="btn btn-outline-primary" href="https://linkedin.con/mdbootstrap/mdb-ui-kit" role="button"><i class="fab fa-linkedin"></i></a>
+              <button type="button" class="btn btn-outline-dark" id="btn-iniciar-sesion" (click)="login()" *ngIf="!isLogged">CERRAR SESION</button>
+          </div>
       </div>
-  </div>
-</nav>
+  </nav>
 </header>
 <!-- Navbar -->
 <!--Sección del Perfil -->
 <section class="py-5 text-center container">
   <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-dark">{{persona.nombre}} {{persona.apellido}}</h1>
+          <h1 class="fw-dark">{{miPorfolio.nombre}} {{miPorfolio.apellido}}</h1>
           <p class="lead text-muted">{{miPorfolio.ocupacion}}</p>
           <div class="d-none d-md-block">
-              <img src={{persona.img}} class="foto_perfil" />
+              <img src="{{persona.img}}" class="foto_perfil" />
           </div>
-          <h4 class="text-danger">Sobre mi</h4>
+          <h4 class="text-danger">SOBRE MI</h4>
           <p class="text-muted">{{persona.descripcion}}</p>
           <div class="btn-edit">
-              <button type="button" class="btn btn-primary btn" routerLink="/edit-acercade/1">Editar persona</button>
-              <button type="button" class="btn btn-danger btn">Eliminar persona</button>
+              <button type="button" class="btn btn-primary btn" routerLink="/edit-acercade/1">EDITAR PERSONA</button>
+              <button type="button" class="btn btn-danger btn">ELIMINAR PERSONA</button>
           </div>
       </div>
   </div>
 </section>
-

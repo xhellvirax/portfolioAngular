@@ -1,133 +1,101 @@
-<!-- Sección Sobre mis Proyectos 
-<h1 class="text-dark" id="title">Mis Proyectos</h1>
-<li *ngFor="let misproyectos of misproyectos">
-   <div class="row" id="row">
-       <div class="col-xl-4 col-lg-6 mb-4">
-         <div class="card">
-           <div class="card-body">
-             <div class="d-flex align-items-center">
-               <img [src]="misproyectos.logo" alt="" style="width: 90px; height: 90px" class="rounded-circle"/>
-               <div class="ms-3">
-                 <p class="fw-bold mb-1">{{misproyectos.nombre}}</p>
-                 <p class="text-muted mb-0">{{misproyectos.Fechacreacion}}</p>
-                 <div class="btn-edit">
-                  <button type="button" class="btn btn-primary">Editar</button>
-                  <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div> -->
+<div class="container">
+  <div class="section-title">
+      <h2>MIS PROYECTOS Y CERTIFICADOS</h2>
+  </div>
+  <!--GALERIA CAROUSEL -->
+  <div class="container">
+      <div class="row">
+          <div class="container">
+              <div class="row">
+                  <div class="col-6 text-right">
+                      <a class="btn btn-info mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                          <i class="fa fa-arrow-left"></i>
+                      </a>
+                      <a class="btn btn-info mb-3" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                          <i class="fa fa-arrow-right"></i>
+                      </a>
+                  </div>
+                  <div class="col-12">
+                      <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <div class="row">
+                                      <div class="col-md-4 mb-3">
+                                          <div class="card" style="border:none;">
+                                              <img src="https://i.ibb.co/8z7HW9q/ecommerce-potrero.png" />
+                                              <!-- Card content -->
+                                                <div class="card-body">
+                                                    <!-- Title -->
+                                                    <h4 class="card-title" style=" font-family:Montserrat, sans-serif;"><a>ECOMMERCE</a></h4>
+                                                    <!-- Text -->
+                                                    <p class="card-text">DESCRIPCION DEL PROYECTO.</p>
+                                                    <!-- Button -->
+                                                    <a href="#" class="btn btn-primary">VER PROYECTO</a>
+                                                </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                          <div class="card">
+                                              <img class="img-fluid" alt="100%x280" src=" https://mijormi.vteximg.com.br/arquivos/ids/174518-1000-1332/Lampara-colgante-moderna-VIRGO-BLACK-_-BRONCE-Landmark-0.jpg?v=637769852893000000" />
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                          <div class="card">
+                                              <img class="img-fluid" alt="100%x280" src=" https://mijormi.vteximg.com.br/arquivos/ids/176992-1000-1332/Hamaca-de-ratan-negro-KAY-BLACK-Landmark-01.jpg?v=637953181102170000 " />
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <div class="row">
+                                      <div class="col-md-4 mb-3">
+                                          <div class="card">
+                                              <img class="img-fluid" alt="100%x380" src=" https://mijormi.vteximg.com.br/arquivos/ids/167526-1000-1332/Landmark-Decor-CARDIFF-COBRE-RelojDePared-0.jpg?v=637483923263100000 " />
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                          <div class="card">
+                                              <img class="img-fluid" alt="100%x280" src=" https://mijormi.vteximg.com.br/arquivos/ids/157641-1000-1332/Landmark-Muebles-PRINCESS-2075X45X80-Cajonero-0.jpg?v=637063223964400000" />
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                          <div class="card">
+                                              <img class="img-fluid" alt="100%x280" src="https://mijormi.vteximg.com.br/arquivos/ids/168989-1000-1332/Landmark-Decor-TabaquilloGris-Espejo-1.jpg?v=637526234628900000 " />
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <div class="row">
+                                      <div class="col-md-4 mb-3">
+                                          <div class="card">
+                                              <img
+                                                  class="img-fluid"
+                                                  alt="100%x280"
+                                                  src=" https://mijormi.vteximg.com.br/arquivos/ids/177116-1000-1332/Silla-de-comedor-pana-gris-pata-cromada-MALAIKA-DARK-GREY-Landmark-01.jpg?v=637963453149300000"
+                                              />
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                          <div class="card">
+                                              <img class="img-fluid" alt="100%x280" src="https://mijormi.vteximg.com.br/arquivos/ids/172310-1000-1332/APLIQUE-DE-PARED-CROMADO-EDIE-BRILLANTE-Landmark-0.jpg?v=637637699866300000 " />
+                                          </div>
+                                      </div>
+                                      <div class="col-md-4 mb-3">
+                                          <div class="card">
+                                              <img class="img-fluid" alt="100%x280" src=" https://mijormi.vteximg.com.br/arquivos/ids/162121-1000-1332/Landmark-Muebles-AsherCigar-Sillon-0.jpg?v=637318019930100000" />
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 
-<!-- Card 
-<h1 class="text-dark" id="title">Mis Proyectos</h1>
-<div class="container">
-<div class="card card-image" style="background-image: url(https://fondosmil.com/fondo/32016.jpg);">
-  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
-    <div>
-      <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Marketing</h5>
-      <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-        optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
-        Odit sed qui, dolorum!.</p>
-      <a class="btn btn-pink" style="color:white ;"><i class="fas fa-clone left"></i> Ver proyecto</a>
-    </div>
-  </div>
-</div>
-<div class="card card-image" style="background-image: url(https://fondosmil.com/fondo/32016.jpg);">
-  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
-    <div>
-      <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Marketing</h5>
-      <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-        optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
-        Odit sed qui, dolorum!.</p>
-      <a class="btn btn-pink" style="color:white ;"><i class="fas fa-clone left"></i> Ver proyecto</a>
-    </div>
-  </div>
-</div>
-<div class="card card-image" style="background-image: url(https://fondosmil.com/fondo/32016.jpg);">
-  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
-    <div>
-      <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Marketing</h5>
-      <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-        optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
-        Odit sed qui, dolorum!.</p>
-      <a class="btn btn-pink" style="color:white ;"><i class="fas fa-clone left"></i> Ver projecto</a>
-    </div>
-  </div>
-</div>
-<div class="card card-image" style="background-image: url(https://fondosmil.com/fondo/32016.jpg);">
-  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
-    <div>
-      <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Marketing</h5>
-      <h3 class="card-title pt-2"><strong>This is the card title</strong></h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-        optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
-        Odit sed qui, dolorum!.</p>
-      <a class="btn btn-pink" style="color:white ;"><i class="fas fa-clone left"></i> Ver proyecto</a>
-    </div>
-  </div>
-</div>
-</div> -->
-<div class="container">
-<section class="portfolio" id="misproyectos">
-<div class="section-title">
-  <h2>MIS PROYECTOS Y CERTIFICADOS</h2>
-</div>
-<div class="portfolio-content">
-  <div class="col">
-    <img src="https://images.unsplash.com/photo-1591360236499-9c2355422926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=396&q=80 ">
-    <div class="layer">
-      <h3>DISEÑO WEB</h3>
-      <h5>Popup</h5>
-      <button type="button" class="btn btn-secondary">Ver proyecto</button>
-    </div>
-  </div>
-  <div class="col">
-    <img src="https://images.unsplash.com/photo-1591360236499-9c2355422926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=396&q=80 ">
-    <div class="layer">
-      <h3>DISEÑO WEB</h3>
-      <h5>Popup</h5>
-      <button type="button" class="btn btn-secondary">Ver proyecto</button>
-    </div>
-  </div>
-  <div class="col">
-    <img src="https://images.unsplash.com/photo-1591360236499-9c2355422926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=396&q=80 ">
-    <div class="layer">
-      <h3>DISEÑO WEB</h3>
-      <h5>Popup</h5>
-      <button type="button" class="btn btn-secondary">Ver proyecto</button>
-    </div>
-  </div>
-  <div class="col">
-    <img src=" https://images.unsplash.com/photo-1591360236499-9c2355422926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=396&q=80">
-    <div class="layer">
-      <h3>DISEÑO WEB</h3>
-      <h5>Popup</h5>
-      <button type="button" class="btn btn-secondary">Ver proyecto</button>
-    </div>
-  </div>
-  <div class="col">
-    <img src=" https://images.unsplash.com/photo-1591360236499-9c2355422926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=396&q=80">
-    <div class="layer">
-      <h3>DISEÑO WEB</h3>
-      <h5>Popup</h5>
-      <button type="button" class="btn btn-secondary">Ver proyecto</button>
-    </div>
-  </div>
-  <div class="col">
-    <img src=" https://images.unsplash.com/photo-1591360236499-9c2355422926?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=396&q=80">
-    <div class="layer">
-      <h3>DISEÑO WEB</h3>
-      <h5>Popup</h5>
-      <button type="button" class="btn btn-secondary">Ver proyecto</button>
-    </div>
-  </div>
-</div>
-</section>
-</div>
 
 

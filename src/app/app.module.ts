@@ -18,6 +18,7 @@ import { EditAcercadeComponent } from './componentes/encabezado/edit-acercade.co
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { LogoutComponent } from './componentes/logout/logout.component';
 
 
 
@@ -34,6 +35,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     NewExperienciaComponent,
     EditExperienciaYEducacionComponent,
     EditAcercadeComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
