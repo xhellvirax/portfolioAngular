@@ -77,6 +77,10 @@ nav.navbar.navbar-expand-lg.navbar-white.bg-white {
     --bs-navbar-brand-margin-end: 7rem;
 }
 
+ul.navbar-nav {
+    font-family: 'Montserrat';
+}
+
 /* Se elimina los estilos de las listas */
 li {
     list-style: none;
@@ -84,9 +88,9 @@ li {
 
 /* Estilos sección encabezado */
 .foto_perfil {
-    width: 25%;
+    width: 30%;
     position: absolute;
-    top: 41%;
+    top: 20%;
     left: 1%;
     float: left;
     display: flex;
@@ -111,12 +115,17 @@ li {
 }
 
 /* Barra de Progreso */
-.progress {
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    margin: auto;
-    margin-top: 13px;
+.fw-bolder {
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    font-weight: bolder !important;
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+}
+
+.section.px-3.px-lg-4.pt-5 {
+    margin: 29px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
 
 /* Estilos sección Mis proyectos */
@@ -146,8 +155,6 @@ button.btn.btn-primary.btn {
 }
 
 button.btn.btn-dark {
-    margin-top: 40px;
-    margin-bottom: 40px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
@@ -182,6 +189,7 @@ button.btn.btn-danger {
 
 button#btn-iniciar-sesion.btn.btn {
     margin: 5px;
+    font-family:'Montserrat';
 }
 
 a.btn.btn-info.mb-3.mr-1 {
@@ -231,13 +239,12 @@ a.btn.btn-info.mb-3 {
 /* Sección educación y experiencia laboral */
 .section-title {
     text-align: center;
-    margin: 75px;
 }
 
 .section-title h1 {
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 70px;
     padding-bottom: 15px;
     position: relative;
     color: black;
@@ -277,17 +284,15 @@ a.btn.btn-info.mb-3 {
     font-family: 'Roboto', sans-serif;
     padding: 10px;
 }
+/* TABLA SECCIÓN EXPERIENCIA Y EDUCACIÓN */
 
-.col {
-    position: relative;
+th {
+    font-size: 19px;
+    font-family: "Montserrat", sans-serif;
 }
 
-.col img {
-    max-width: 100%;
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 12px;
+td {
+    font-family: 'Roboto', sans-serif;
 }
 
 .layer {
@@ -324,10 +329,11 @@ a.btn.btn-info.mb-3 {
     margin: revert;
 }
 
-/* CARDS SECCION MIS PROYECTOS Y SERTIFICADOS */
+/* CARDS SECCION MIS PROYECTOS Y CERTIFICADOS */
 
 #team {
-    background: #f7f7f7 !important;
+    margin: 29px;
+    background: white !important;
 }
 
 .btn-primary:hover,
@@ -344,9 +350,6 @@ a.btn.btn-info.mb-3 {
     border-color: black;
 }
 
-section {
-    padding: 60px 0;
-}
 
 section .section-title {
     text-align: center;
@@ -358,37 +361,7 @@ section .section-title {
 #team .card {
     border: none;
     background: #ffffff;
-}
 
-.image-flip:hover .backside,
-.image-flip.hover .backside {
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    border-radius: .25rem;
-}
-
-.image-flip:hover .frontside,
-.image-flip.hover .frontside {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.mainflip {
-    -webkit-transition: 1s;
-    -webkit-transform-style: preserve-3d;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
-    --moz-transform: perspective(1000px);
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transition: 1s;
-    transform-style: preserve-3d;
-    position: relative;
 }
 
 .frontside {
@@ -399,23 +372,8 @@ section .section-title {
     margin-bottom: 30px;
 }
 
-.backside {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: white;
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-}
 
-.frontside,
-.backside {
+.frontside {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
@@ -432,23 +390,31 @@ section .section-title {
     transform-style: preserve-3d;
 }
 
-.frontside .card,
-.backside .card {
+.frontside .card {
     min-height: 312px;
 }
 
-.backside .card a {
+.card a {
     font-size: 14px;
     color: white !important;
 }
 
-.frontside .card .card-title,
-.backside .card .card-title {
+.frontside .card .card-title {
     color: black !important;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .frontside .card .card-body img {
     width: 100%;
     height: 100%;
+}
+
+.container:hover img {
+	transform: scale(1.1, 1.1);
+	z-index: 9;
+}
+
+.card-body.text-center:hover {
+    transform: scale(1.1, 1.1);
+	z-index: 9;
 }
