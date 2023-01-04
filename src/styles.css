@@ -124,7 +124,7 @@ li {
 }
 
 .section.px-3.px-lg-4.pt-5 {
-    margin: 29px;
+    margin: 17px;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
 
@@ -144,14 +144,12 @@ li {
 /* estilos botones */
 button.btn.btn-primary {
     margin: 5px;
-    font-family: 'Roboto', sans-serif;
-    float: right;
+    font-family: 'Roboto', sans-serif
 }
 
 button.btn.btn-primary.btn {
     margin: 5px;
     font-family: 'Roboto', sans-serif;
-    float: right;
 }
 
 button.btn.btn-dark {
@@ -165,7 +163,6 @@ button.btn.btn-dark:hover {
 
 button.btn.btn-danger {
     font-family: 'Roboto', sans-serif;
-    float: right;
     margin: 6px;
 }
 

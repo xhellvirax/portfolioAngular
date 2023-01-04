@@ -9,6 +9,7 @@ import { Experiencia } from 'src/model/experiencia';
   styleUrls: ['./experiencia-yeducacion.component.css']
 })
 export class ExperienciaYeducacionComponent implements OnInit {
+  miPorfolio:any;
   expe : Experiencia[] = [] ;
   educacion:any;
   constructor(private datosPorfolio:PorfolioService, private sExperiencia : SExperienciaService) { 

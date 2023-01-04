@@ -32,10 +32,10 @@
           <h1 class="fw-dark" style=" font-family:Montserrat, sans-serif;color: black;">{{miPorfolio.nombre}} {{miPorfolio.apellido}}</h1>
           <p class="lead text-muted">{{miPorfolio.ocupacion}}</p>
           <div class="d-none d-md-block">
-              <img src={{persona.img}} class="foto_perfil" />
+              <img src={{miPorfolio.img}} class="foto_perfil" />
           </div>
           <h4 class="text-danger">SOBRE MI</h4>
-          <p class="text-muted">{{persona.descripcion}}</p>
+          <p class="text"style="font-family: Roboto, sans-serif;"  >{{persona.descripcion}}</p>
           <div class="btn-edit">
               <button type="button" class="btn btn-primary btn" routerLink="/edit-acercade/1">EDITAR PERSONA</button>
               <button type="button" class="btn btn-danger btn">ELIMINAR PERSONA</button>
