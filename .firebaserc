@@ -1,7 +1,9 @@
 {
   "projects": {
-    "default": "portfolioargentinaprogra-901b0",
-    "proyecto-final": "portfolioargentinaprogra-901b0"
+    "default": "portfolioangular1",
+    "proyecto-final": "portfolioargentinaprogra-901b0",
+    "portfolioarg": "argentinaportfolio-4f502",
+    "staging": "portfolioangular1"
   },
   "targets": {},
   "etags": {}
