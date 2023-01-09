@@ -1,12 +1,13 @@
 export const environment = {
   firebase: {
-    projectId: 'portfolio-406c6',
-    appId: '1:273200278090:web:85aceb638e11194bb7d4b3',
-    storageBucket: 'portfolio-406c6.appspot.com',
-    apiKey: 'AIzaSyBKbZ3OoRJOQaKS68p_CeQ6lZI3FQExy6M',
-    authDomain: 'portfolio-406c6.firebaseapp.com',
-    messagingSenderId: '273200278090',
-    measurementId: 'G-ZY75HFN1WT',
+    projectId: 'portfolioargentinaprogra-901b0',
+    appId: '1:269330325761:web:c58212088db4d76829fb00',
+    storageBucket: 'portfolioargentinaprogra-901b0.appspot.com',
+    locationId: 'us-central',
+    apiKey: 'AIzaSyAp14EHzwwOFxrp8yKdUwxIhZNtPoHF0H8',
+    authDomain: 'portfolioargentinaprogra-901b0.firebaseapp.com',
+    messagingSenderId: '269330325761',
+    measurementId: 'G-9TJVNF89CW',
   },
   production: true
 };
