@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AutenticacionService {
-  url = "http://localhost:8080/auth/login";
+  url = "https://portfoliobackend-production-0439.up.railway.app/auth/login";
   currentUserSubjet : BehaviorSubject<any>;
 
 constructor(private http : HttpClient) { 
