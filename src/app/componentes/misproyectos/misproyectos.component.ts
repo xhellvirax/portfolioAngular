@@ -12,7 +12,7 @@ export class MisproyectosComponent implements OnInit {
 
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
+      //console.log(data);
       this.misproyectos = data.misproyectos;
     });
   }

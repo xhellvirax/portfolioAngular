@@ -20,7 +20,7 @@ export class EncabezadoComponent implements OnInit {
 
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data => {
-      console.log(data);
+      //console.log(data);
       this.miPorfolio = data;
     });
     this.cargarPersona();
@@ -42,6 +42,7 @@ export class EncabezadoComponent implements OnInit {
   cargarPersona () {
     this.personaservice.detail(1).subscribe(data => {
       this.persona = data;
+      console.log("la data del ws " + data);
     })
   }
 }

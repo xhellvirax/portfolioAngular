@@ -18,7 +18,7 @@ persona : Persona = null;
     this.personaService.detail(id).subscribe(data => {
       this.persona = data;
     },err => {
-      alert("Error al modificar experiencia");
+      alert("Error al modificar persona");
       this.router.navigate(['']);
     })
   }

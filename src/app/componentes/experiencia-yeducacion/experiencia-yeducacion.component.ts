@@ -18,7 +18,6 @@ export class ExperienciaYeducacionComponent implements OnInit {
   ngOnInit(): void {
     this.cargarExperiencia();
     this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
       this.educacion = data.educacion;
 
     });
