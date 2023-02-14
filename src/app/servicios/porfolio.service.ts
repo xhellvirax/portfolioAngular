@@ -10,6 +10,6 @@ export class PorfolioService {
   constructor(private http:HttpClient) { }
 
   obtenerDatos():Observable<any> {
-    return this.http.get('https://portfolioback-yo68.onrender.com/personas/detal/1');
+    return this.http.get('https://portfolioback-yo68.onrender.com/personas/detail/1');
   }
 }
