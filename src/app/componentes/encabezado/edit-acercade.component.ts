@@ -3,6 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ImageService } from 'src/app/servicios/image.service';
 import { PersonaService } from 'src/app/servicios/persona.service';
 import { Persona } from 'src/model/persona';
+import { Storage, ref, uploadBytes } from '@angular/fire/storage';
+
 
 @Component({
   selector: 'app-edit-acercade',
@@ -11,7 +13,7 @@ import { Persona } from 'src/model/persona';
 })
 export class EditAcercadeComponent implements OnInit {
 persona : Persona = null;
-  constructor(private activatedrRouter: ActivatedRoute, private personaService: PersonaService, private router: Router, public imageService:ImageService) { }
+  constructor(private activatedrRouter: ActivatedRoute, private personaService: PersonaService, private router: Router, public imageService:ImageService, private storage: Storage) { }
 
   ngOnInit(): void {
     const id = this.activatedrRouter.snapshot.params['id'];
@@ -33,11 +35,18 @@ persona : Persona = null;
       this.router.navigate(['']);
     })
   }
+  
 
   uploadImage($event:any) {
-    const id = this.activatedrRouter.snapshot.params['id'];
+    /*const id = this.activatedrRouter.snapshot.params['id'];
     const name = "perfil_" + id;
     this.imageService.uploadImage($event, name);
+    */
+    const file = $event.target.files[0];
+    console.log(file);
+    const imgRef = ref(this.storage, `imagen/${file.name}`);
+    uploadBytes(imgRef, file)
+    .then( response => console.log(response))
+    .catch(error => console.log(error))
   }
-
 }
