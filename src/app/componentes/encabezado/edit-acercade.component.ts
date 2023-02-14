@@ -38,13 +38,11 @@ persona : Persona = null;
   
 
   uploadImage($event:any) {
-    /*const id = this.activatedrRouter.snapshot.params['id'];
-    const name = "perfil_" + id;
-    this.imageService.uploadImage($event, name);
-    */
     const file = $event.target.files[0];
     console.log(file);
+
     const imgRef = ref(this.storage, `imagen/${file.name}`);
+
     uploadBytes(imgRef, file)
     .then( response => console.log(response))
     .catch(error => console.log(error))
