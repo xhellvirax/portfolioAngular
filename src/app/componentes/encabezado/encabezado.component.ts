@@ -42,7 +42,7 @@ export class EncabezadoComponent implements OnInit {
   cargarPersona () {
     this.personaservice.detail(1).subscribe(data => {
       this.persona = data;
-      console.log("la data del ws " + data);
+      console.log("la data del ws es " + data);
     })
   }
 }

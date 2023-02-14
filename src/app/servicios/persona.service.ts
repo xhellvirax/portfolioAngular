@@ -15,6 +15,7 @@ URL = 'https://portfolioback-g87o.onrender.com/personas/'
 
   public detail(id : number):Observable<Persona> {
     return this.http.get<Persona>(this.URL + `detail/${id}`);
+    console.log(this.http.get<Persona>(this.URL + `detail/${id}`));
   }
 
   /*public save(experiencia : Experiencia):Observable<any> {
