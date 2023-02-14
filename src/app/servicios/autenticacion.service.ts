@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AutenticacionService {
-  url = "https://portfolioback-g87o.onrender.com/auth/login";
+  url = "https://portfolioback-yo68.onrender.com/auth/login";
   currentUserSubjet : BehaviorSubject<any>;
 
 constructor(private http : HttpClient) { 
