@@ -29,7 +29,7 @@ persona : Persona = null;
 
   onUpdate():void {
     const id = this.activatedrRouter.snapshot.params['id'];
-    //this.persona.img = this.getImages();
+    //this.persona.img = this.getImages().items[0];
     this.personaService.update(id, this.persona).subscribe(data => {
       this.router.navigate(['']);
     },err => {
