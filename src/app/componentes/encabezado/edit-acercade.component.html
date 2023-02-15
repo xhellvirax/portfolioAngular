@@ -19,6 +19,9 @@
                     <label for="img" style="font-family:Montserrat,sans-serif;">IMAGEN</label>
                     <input type="file" class="form-control" name="img" id="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png" />
                 </div>
+                <div class="images">
+                    <img [src]="images" *ngFor="let img of images" class="img-responsive" style="width: 80px;">
+                </div>
                 <br>
                 <button type="submit" class="btn btn-primary" style="font-family: Roboto, sans-serif;" >ACTUALIZAR</button>
             </form>

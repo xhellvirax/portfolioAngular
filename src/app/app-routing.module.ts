@@ -9,7 +9,7 @@ import { PofolioComponent } from './componentes/pofolio/pofolio.component';
 const routes: Routes = [
 {path : 'pofolio', component: PofolioComponent},
 {path : 'iniciar-sesion', component: IniciarSesionComponent},
-{path : '', redirectTo: 'iniciar-sesion', pathMatch: 'full'},
+{path : '', redirectTo: 'pofolio', pathMatch: 'full'},
 {path: 'nuevaexp', component: NewExperienciaComponent},
 {path : 'editexp/:id', component: EditExperienciaYEducacionComponent},
 {path : 'edit-acercade/:id', component: EditAcercadeComponent}

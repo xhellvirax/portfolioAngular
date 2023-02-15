@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router} from '@angular/router';
 import { AuthService } from 'src/app/auth.service';
-import { ImageService } from 'src/app/servicios/image.service';
 import { PersonaService } from 'src/app/servicios/persona.service';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
 import { TokenService } from 'src/app/servicios/token.service';
@@ -16,7 +15,7 @@ export class EncabezadoComponent implements OnInit {
   isLogged = false;
   persona : Persona = null;
 
-  constructor(private datosPorfolio:PorfolioService, public router:Router, private tokenService:TokenService, public personaservice:PersonaService, public imageService:ImageService, private authService: AuthService) { }
+  constructor(private datosPorfolio:PorfolioService, public router:Router, private tokenService:TokenService, public personaservice:PersonaService, private authService: AuthService) { }
 
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data => {
@@ -42,7 +41,6 @@ export class EncabezadoComponent implements OnInit {
   cargarPersona () {
     this.personaservice.detail(1).subscribe(data => {
       this.persona = data;
-      console.log("la data del ws es " + data);
     })
   }
 }
